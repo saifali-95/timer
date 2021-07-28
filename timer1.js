@@ -8,11 +8,13 @@ let arrangedInput = inputNumbers.sort(function(a, b) {
 let time = 1000;
 let decentTime = arrangedInput[(arrangedInput.length)-1]*1100;
 
-
 for(let i=0; i < arrangedInput.length; i++){
+ if(Number(arrangedInput[i])){
   setTimeout(()=>{
     process.stdout.write('.');
   }, arrangedInput[i]*1000)
+
+}
 }
 
 setTimeout(()=>{
